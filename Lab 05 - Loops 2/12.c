@@ -4,8 +4,10 @@ int main()
 {
     int i, j;
     int toggle = 1;
+    int row;
+    scanf("%d",&row);
 
-    for (i = 1; i <= 5; i++)
+    for (i = 1; i <= row; i++)
     {
         toggle = (i&1)?1:0;
 
