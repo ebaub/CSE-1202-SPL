@@ -1,0 +1,1 @@
+toggle = (toggle==0)?1:0;

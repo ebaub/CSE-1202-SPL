@@ -3,7 +3,7 @@
 int main()
 {
     int i, j;
-    int toggle = 1;
+    int toggle;
 
     for (i = 1; i <= 5; i++)
     {
@@ -18,7 +18,7 @@ int main()
         }
         for (j = 1; j <= i; j++)
         {
-            printf("%d ", toggle);
+            printf("%d ", toggle); // 1 0 1 0 1 
             if (toggle == 0)
             {
                 toggle = 1;
