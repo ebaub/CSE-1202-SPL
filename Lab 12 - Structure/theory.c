@@ -1,5 +1,15 @@
 #include <stdio.h>
 
+/*
+1. Find the average mark of the students
+2. Search for a specific student by their id
+3. Search for a specific student by their name
+4. Find number of students who is admitted in 2024 and has obtained more than 65 marks'
+5. Find top 5 students
+*/
+
+
+
 struct Student
 {
     char name[50];
@@ -39,11 +49,14 @@ int main()
     printf("-------------------\n");
     for (i = 0; i < 20; i++)
     {
-        printf("ID: %d\n", students[i].id);
-        printf("Name: %s\n", students[i].name);
-        printf("Batch: %d\n", students[i].batch);
-        printf("Semester: %d\n", students[i].semester);
-        printf("Mark: %d\n", students[i].mark);
-        printf("\n\n\n");
+        if (students[i].mark >= 80)
+        {
+            printf("ID: %d\n", students[i].id);
+            printf("Name: %s\n", students[i].name);
+            printf("Batch: %d\n", students[i].batch);
+            printf("Semester: %d\n", students[i].semester);
+            printf("Mark: %d\n", students[i].mark);
+            printf("\n\n\n");
+        }
     }
 }
